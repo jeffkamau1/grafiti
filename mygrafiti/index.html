@@ -18,7 +18,7 @@
         	height: 100vh;
         }
         .femaleimage{
-        	margin-top:87px;
+        	margin-top:10%;
         	width: 350px;
         	height:450px;
         	 background: url(img/female2.jpg);
@@ -34,7 +34,7 @@
 
         }
         .welcometext{
-        	margin-top: 97px;
+        	margin-top: 160px;
         }
         .socials{
         	display: flex;
@@ -44,25 +44,39 @@
       padding-top: 4vw;
       padding-bottom: 4vw;
     }
+    @media only screen and (max-width: 400px) {
+  .welcometext {
+    color:#00796b !important ;
+    margin-bottom: 120px;
+  }
+}
+ @media only screen and (max-width: 540px) {
+  .welcometext {
+    color:#00796b !important ;
+    margin-top: 200px;
+    margin-bottom: 60px;
 
+  }
+}
+    
 
     </style>
     
 </head>
 <body>
     <!-- navbar  -->
-    <header id="myheader" class="scrollspy" >
-        <nav class="nav-wrapper teal darken-2 z-depth-0">
-            <div class="container">
+    <header  class="scrollspy" >
+        <nav class="nav-wrapper teal darken-2 z-depth-0" >
+            <div class="container" id="myheader">
               <a href="#" class="brand-logo">Grafiti logo</a>
               <a href="#" class="sidenav-trigger" data-target="mobile-menu">
                 <i class="material-icons">menu</i>
               </a>
-              <ul class="right hide-on-med-and-down">
+              <ul class="right hide-on-med-and-down links">
                 
-                <li><a href="#about">A little about Me!</a></li>
-                <li><a href="#services">What I do</a></li>
-                <li><a href="#gallery">My work!</a></li>
+                <li><a href="#about" style="font-size: 1.25rem">A little about Me!</a></li>
+                <li><a href="#services" style="font-size:1.25rem">What I do</a></li>
+                <li><a href="#gallery" style="font-size: 1.25rem">My work!</a></li>
 
                 <li><a href="#contacts">Contact Me!</a></li>
 
@@ -78,8 +92,8 @@
             </div>
           </nav>
           <div class="row container">
-          	<div class="col s12 m6 l6 femaleimage"></div>
-          	<div class="col s12 m7 l5 offset-l1">
+          	<div class="col s12 m5 l6 femaleimage"></div>
+          	<div class="col s12 m5 l5 offset-l1">
           		<h3 class=" welcometext white-text">Hey there, my name is Sofia Valdez I am
           			 a grafiti artist.  Welcome to my world and feel free to explore it!
           		</h3>
@@ -88,6 +102,7 @@
           </div>
     </header>
 
+    <!-- About me -->
     <section class="container section aboutme scrollspy" id="about">
     	
     	<div class="row">
@@ -125,13 +140,13 @@
         </ul>
         <div id="potrait" class="col s12">
             <p class="flow-text teal-text text-darken-2">Potrait</p>
-            <p>Aside from grafiti i also do potratits for people, I assure high quality and finess.
+            <p>Aside from grafiti I also do potratits for people, I assure high quality and finess.
             I believe potraits are a great expression</p>
             <p>Just contact us and book in adavance to get your potrait!</p>
         </div>
         <div id="wallgrafiti" class="col s12">
             <p class="flow-text teal-text text-darken-2">Street Art</p>
-            <p>The streets are my canvas , and i major alot in street grafiti , i find it really cool, hope our feeling is mutual.</p>
+            <p>The streets are my canvas , and I major alot in street grafiti , I find it really cool, hope our feeling is mutual.</p>
             <p>Wanna work with us to express your society in the streets , well there is no better way than street grafiti</p>
         </div>
         </div>
@@ -146,9 +161,10 @@
   </div>
   	
 
-
+  <!-- Gallery -->
     <div class="row container section scrollspy" id="gallery">
     	<h3 class="teal-text text-darken-2">My Work!</h3>
+    	<p>Here is some of work, what are you waiting for? Go ahead and tap one!</p>
     	
       <div class="col s12 m4 l4">
       	<img src="img/world.jpg" class="responsive-img card materialboxed">
@@ -173,11 +189,11 @@
       
     </div>
 
-    <footer class="page-footer teal darken-3">
+    <footer class="page-footer teal darken-3 scrollspy" id="contacts">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5>About Me</h5>
+          <h5>Contact Me</h5>
           <p>Like my stuff? then feel free to contact and reach out id love to hear from you</p>
           <p>Also be sure to follow me on my socials and be posted on my latest art.</p>
           <p>Email: sofiavaldez@gmail.com</p>
